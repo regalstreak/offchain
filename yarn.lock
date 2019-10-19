@@ -5158,6 +5158,11 @@ react-is@^16.8.1, react-is@^16.8.4, react-is@^16.9.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"
   integrity sha512-INBT1QEgtcCCgvccr5/86CfD71fw9EPmDxgiJX4I2Ddr6ZsV6iFXsuby+qWJPtmNuMY0zByTsG4468P7nHuNWA==
 
+react-native-sms-x@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/react-native-sms-x/-/react-native-sms-x-1.0.7.tgz#44215a7d053281fa1cf865ae53178dd20ada61f4"
+  integrity sha512-X0HK5aXga/ok32D5hBeSv6oTBcyOntBwdjoFDFJnYoZ0y5NQacNI/goZuc6a2ohQnqhqcOkV5bjTPIAn/VNsBA==
+
 react-native@0.61.2:
   version "0.61.2"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.61.2.tgz#987b91b063557f8ebec803fdfea2044a24bdbe4d"
