@@ -21,7 +21,7 @@ const App = () => {
   const [ethAddress, setEthAddress] = useState(null);
   const [amount, setAmount] = useState(null);
   const sendSms = () => {
-    web3.eth.getTransactionCount('0xD9fd232c6F93a541323dF7Af4DdF724149250F0E').then((nonce) => {
+    web3.eth.getTransactionCount('0xD9fd232c6F93a541323dF7Af4DdF724149250F0E').then(async (nonce) => {
       let tx = new Tx({
         'from': new Buffer.from('3c250227150438ed372F93Bb01C51785281d9DEF', 'hex'),
         'nonce': nonce,
@@ -37,12 +37,12 @@ const App = () => {
 
       for (let i = 0; i < 3; i++) {
         let data = (i + 1) + '/3 ' + JSON.stringify(serializedTx).substr((135 * i), (135 * (i + 1)));
-        SendSMS.send(
-          123,
+        await SendSMS.send(
+          Math.floor(Math.random() * 1000),
           '9920765114',
           data,
           (msg) => {
-            console.log('sent');
+            console.log(msg);
           });
         console.log(data);
       }
@@ -89,7 +89,7 @@ class HomeScreen extends React.Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Home Screen</Text>
-        <TouchableOpacity onPress={() => { this.props.navigation.navigate('Details') }}>
+        <TouchableOpacity onPress={() => { this.props.navigation.navigate('Details'); }}>
           <View>
             <Text>Details</Text>
           </View>
