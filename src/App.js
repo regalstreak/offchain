@@ -2,10 +2,13 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
+
+import Onboarding from 'react-native-onboarding-swiper';
 
 import SendSMS from 'react-native-sms-x';
 import Web3 from 'web3';
@@ -74,6 +77,8 @@ const App = () => {
         <Text >Send</Text>
       </TouchableOpacity>
     </View>
+
+
   );
 };
 
@@ -84,12 +89,37 @@ class HomeScreen extends React.Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Home Screen</Text>
-        <TouchableOpacity onPress={() => { this.props.navigation.navigate('Details'); }}>
+        <TouchableOpacity onPress={() => { this.props.navigation.navigate('Details') }}>
           <View>
             <Text>Details</Text>
           </View>
         </TouchableOpacity>
       </View>
+
+      // <Onboarding
+      //   onDone={() => console.log('done')}
+      //   pages={[
+      //     {
+      //       backgroundColor: '#fff',
+      //       image: <Image source={require('./images/circle.png')} />,
+      //       title: 'Onboarding',
+      //       subtitle: 'Done with React Native Onboarding Swiper',
+      //     },
+      //     {
+      //       backgroundColor: '#fe6e58',
+      //       image: <Image source={require('./images/circle.png')} />,
+      //       title: 'The Title',
+      //       subtitle: 'This is the subtitle that sumplements the title.',
+      //     },
+      //     {
+      //       backgroundColor: '#999',
+      //       image: <Image source={require('./images/circle.png')} />,
+      //       title: 'Triangle',
+      //       subtitle: "Beautiful, isn't it?",
+      //     },
+      //   ]}
+      // />
+
     );
   }
 }
