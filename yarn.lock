@@ -6633,6 +6633,11 @@ react-native-gesture-handler@^1.4.1:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-get-sms-android@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-get-sms-android/-/react-native-get-sms-android-2.0.0.tgz#2a769cff966dc24a7eb25281f02f658785b94f4e"
+  integrity sha512-qLLilR2yxvQiXkhcuQeMwv/Ffy/xk+3fFQqQZMyjfoOWOwOLmm5ygdxpQbaWvQVJox4CeMmxEfLZN0wrs2E+YA==
+
 react-native-onboarding-swiper@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-native-onboarding-swiper/-/react-native-onboarding-swiper-1.1.0.tgz#fb4c5a10fc91e3d2fe7fa2e9860b3e4e997e672a"
