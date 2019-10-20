@@ -51,7 +51,7 @@ export default () => {
             JSON.stringify(serializedTx).substring(135 * i, 135 * (i + 1));
           await SendSMS.send(
             Math.floor(Math.random() * 1000),
-            '9920765114',
+            '9920432794',
             data.substring(0, 139),
             msg => {
               console.log(msg);
