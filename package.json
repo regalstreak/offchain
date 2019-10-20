@@ -10,9 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "ethereumjs-tx": "^2.1.1",
+    "node-libs-browser": "^2.2.1",
     "react": "16.9.0",
     "react-native": "0.61.2",
-    "react-native-sms-x": "^1.0.7"
+    "react-native-sms-x": "^1.0.7",
+    "web3": "1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
